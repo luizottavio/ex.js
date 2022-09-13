@@ -1,6 +1,9 @@
 var seconds = 00
 var minutes = 00
 var hours = 00
+var buttonStart = document.getElementById('button-start');
+var buttonStop = document.getElementById('button-stop');
+var buttonReset = document.getElementById('button-reset');
 var interval
 
 function twodigits(digit) {
@@ -11,26 +14,27 @@ function twodigits(digit) {
   }
 }
 
-function start() {
+
+buttonStart.onclick = function () {
+  console.log(buttonStart);
   timer()
   interval = setInterval(timer, 1000);
+
 }
 
-function stop() {
+buttonStop.onclick = function () {
   clearInterval(interval);
 
-  document.getElementById('timer').innerText = minutes + ':' + seconds;
-
 }
 
-
-function reset() {
+buttonReset.onclick = function () {
   clearInterval(interval);
   seconds = 00;
   minutes = 00;
   document.getElementById('timer').innerText = '00:00:00'
 
 }
+
 
 function timer() {
   seconds++
