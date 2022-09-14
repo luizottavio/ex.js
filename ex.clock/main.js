@@ -6,19 +6,11 @@ function clock() {
     var minutes = newHours.getMinutes();
     var secondes = newHours.getSeconds();
     //console.log(hours, minutes, secondes)
-
     
-    setHours.innerHTML = `${hours}:${minutes}:${secondes}`;
-        
+    setHours.innerHTML = `
+    ${String(hours).length === 1 ? `0${hours}` : hours}:${String(minutes).length === 1 ? `0${minutes}` : minutes }:${String(secondes).length === 1 ? `0${secondes}` : secondes}`;
 }
 
 setInterval(clock, 1000) 
 
-function twodigit(digit) {
-    if (digit < 10) {
-        return('0' + digit);
-    } else {
-        return(digit);
-    }
-   
-}
+

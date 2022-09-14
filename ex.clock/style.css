@@ -1,33 +1,17 @@
 @charset "UTF_8";
 
+
 body {
     background-color: #000000;
-    font-size: 3em;
+    font-family: fantasy;
+    font-size: 4.6em;
+
 }
 
-main {
-    background-color: #01F558;
+#set-hours {
+    color:  #01F558;
     text-align: center;
-    height: 400px;
-    width: 775px;
-    margin: 289px auto 289px auto;
-    border-radius: 15px 15px 15px 15px;
+    padding-top: 450px;
+
 }
 
-clock {
-    text-align: center;
-    padding-top: 30px;
-}
-
-/*div {
-    display: inline-block;
-    background-color: #01F558;
-    color: #000000;
-}
-
-#hours, #minutes, #seconds  {
-    margin-top: 130px;
-    height: 90px;
-    width: 140px;
-    padding-top: 55px;
-}
