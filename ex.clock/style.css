@@ -1,12 +1,12 @@
 @charset "UTF_8";
 
 body {
-    background-color: #01F558;
+    background-color: #000000;
     font-size: 2.5em;
 }
 
 main {
-    background-color: #FFFF;
+    background-color: #01F558;
     text-align: center;
     height: 400px;
     width: 775px;
@@ -15,7 +15,7 @@ main {
 
 div {
     display: inline-block;
-    background-color: #000000;
+    background-color: #01F558;
     color: #FFFF;
     
 }
@@ -26,4 +26,3 @@ div {
     width: 140px;
     padding-top: 55px;
 }
-
