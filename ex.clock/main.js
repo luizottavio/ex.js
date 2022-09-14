@@ -1,27 +1,24 @@
+var setHours = document.getElementById('set-hours');
+
 function clock() {
-
-    var hours = document.getElementById('hours');
     var newHours = new Date();
-    var hor = newHours.getHours();
-    var min = newHours.getMinutes();
-    var sec = newHours.getSeconds();
-    var interval
+    var hours = newHours.getHours();
+    var minutes = newHours.getMinutes();
+    var secondes = newHours.getSeconds();
+    //console.log(hours, minutes, secondes)
 
-    hours.innerHTML = `${hor}:${min}:${sec}`;
- 
+    
+    setHours.innerHTML = `${hours}:${minutes}:${secondes}`;
+        
 }
 
-sec.onload = function () {
+setInterval(clock, 1000) 
 
-    timerSec();
-    interval = setInterval(timerSec, 1000);
-
-}
-
-function timerSec() {
-    sec++
+function twodigit(digit) {
+    if (digit < 10) {
+        return('0' + digit);
+    } else {
+        return(digit);
+    }
    
- 
 }
-
-//document.getSeconds().innerText=sec
