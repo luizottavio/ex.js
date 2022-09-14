@@ -2,7 +2,7 @@
 
 body {
     background-color: #000000;
-    font-size: 2.5em;
+    font-size: 3em;
 }
 
 main {
@@ -11,13 +11,13 @@ main {
     height: 400px;
     width: 775px;
     margin: 289px auto 289px auto;
+    border-radius: 15px 15px 15px 15px;
 }
 
 div {
     display: inline-block;
     background-color: #01F558;
-    color: #FFFF;
-    
+    color: #000000;
 }
 
 #hours, #minutes, #seconds  {
