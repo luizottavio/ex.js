@@ -4,11 +4,13 @@ function clock() {
     var minutes = document.getElementById('minutes');
     var seconds = document.getElementById('secondes');
 
-    var newHours = new Data();
-    var hor = hours.getHours();
-    var min = hours.getMinutes();
-    var sec = hours.getSeconds();
+    var newHours = new Date();
+    var hor = newHours.getHours();
+    var min = newHours.getMinutes();
+    var sec = newHours.getSeconds();
 
-    document.getElementById('hours').textContent = hours + ':' + minutes + ':' + seconds;
+    hours,minutes,seconds.innerHTML = `${hor}:${min}:${sec}`;
+
+    /*document.getElementById('hours').textContent = hours + ':' + minutes + ':' + seconds;*/
 
 }
