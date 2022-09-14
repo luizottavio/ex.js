@@ -14,7 +14,12 @@ main {
     border-radius: 15px 15px 15px 15px;
 }
 
-div {
+clock {
+    text-align: center;
+    padding-top: 30px;
+}
+
+/*div {
     display: inline-block;
     background-color: #01F558;
     color: #000000;
